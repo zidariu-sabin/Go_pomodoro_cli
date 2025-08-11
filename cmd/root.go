@@ -47,6 +47,8 @@ func start(cmd *cobra.Command, args []string) {
 	// breakTime, _ := cmd.Flags().GetInt("breakTime")
 	// cycles, _ := cmd.Flags().GetInt("cycles")
 
+	internal.NewTimer(time.Duration(workingTime))
+
 	internal.TimeRemaining, _ = time.ParseDuration(strconv.Itoa(workingTime) + "m")
 }
 
