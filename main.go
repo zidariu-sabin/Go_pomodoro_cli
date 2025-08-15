@@ -15,7 +15,7 @@ func main() {
 	var workTime int
 	var breakTime int
 	var rounds int
-	flag.IntVar(&workTime, "w", 5, "duration of the working time")
+	flag.IntVar(&workTime, "w", 25, "duration of the working time")
 	flag.IntVar(&breakTime, "b", 5, "duration of the break time")
 	flag.IntVar(&rounds, "r", 4, "number of rounds the user wants the timer to run for")
 	flag.Parse()
